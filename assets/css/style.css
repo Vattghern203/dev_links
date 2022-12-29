@@ -52,6 +52,7 @@ body {
   background: var(--bg-image) no-repeat top center/cover;
   font-size: 1.6rem;
   color: var(--text-color);
+  min-width: 100vh;
 
   transition: all .8s cubic-bezier(.16,-0.67,.87,1.5);
 }
@@ -214,4 +215,16 @@ a:visited {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 70em) {
+  :root {
+    --bg-image: url(../img/bg-desktop.png);
+  }
+
+  .light {
+    --bg-image: url(../img/bg-desktop-light.png);
+  }
 }
