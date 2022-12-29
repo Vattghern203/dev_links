@@ -115,9 +115,13 @@ a:visited {
 
   transform: translateY(-50%);
 
-  transition: all .4s ease-in;
+  transition: all .4s ease-in, outline .1s ease;
 
   cursor: pointer;
+}
+
+.theme-switch__btn:hover {
+  outline: .9rem solid var(--highlight-color);
 }
 
 .light .theme-switch__btn {
